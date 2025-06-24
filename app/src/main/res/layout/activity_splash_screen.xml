@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".SplashScreen">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/man_logo"
+        android:layout_width="256dp"
+        android:layout_height="227dp"
+        android:src="@drawable/fd2"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="7dp"
+        app:civ_shadow_radius="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261">
+
+    </com.mikhaellopez.circularimageview.CircularImageView>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="227dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:text="FOODIES5"
+        android:textColor="#1114F8"
+        android:textSize="26dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/man_logo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/man_logo"
+        app:layout_constraintTop_toBottomOf="@+id/man_logo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="296dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/atomic_age"
+        android:gravity="center"
+        android:text='"One cannot think well,love well,sleep well if one has not dined well"'
+        android:textColor="#1114F8"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/app_name"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/app_name"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        android:indeterminateTint="#FF00A2 "
+        android:indeterminateDuration="400"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

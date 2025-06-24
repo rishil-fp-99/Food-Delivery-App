@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_side_nav_top_res"
+  >
+
+
+    <fragment
+        android:id="@+id/navigation_home_side_nav_top_res"
+        android:name="com.example.foodies5.ui.home_side_nav_top_res.Home_Side_Nav_Top_Rest"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home__side__nav__top__rest"
+        />
+
+
+    <fragment
+        android:id="@+id/nav_self_sub"
+        android:name="com.example.foodies5.ui.self_sub.self_subway"
+        android:label="@string/menu_self_sub"
+        tools:layout="@layout/fragment_self_sub"/>
+
+
+    <fragment
+        android:id="@+id/nav_meals"
+        android:name="com.example.foodies5.ui.meals.Meals"
+        android:label="@string/menu_meals"
+        tools:layout="@layout/fragment_meals"/>
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.foodies5.ui.contact_side_nav.Contact_Us_side_nav"
+        android:label="@string/contact"
+        tools:layout="@layout/fragment_contact__us_side_nav"/>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.foodies5.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!--Search-->
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.foodies5.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+    <!--Profile-->
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.foodies5.ui.profile.profile_fragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_videos_img"
+        android:name="com.example.foodies5.ui.videos_img.video_img_fragment"
+        android:label="@string/title_videos_img"
+        tools:layout="@layout/fragment_video_img"
+        />
+
+</navigation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.contact_side_nav.Contact_Us_side_nav"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:text="Contact Us"
+        android:gravity="start"
+        android:paddingTop="18dp"
+        android:fontFamily="@font/atomic_age"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#089F8B"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="@string/how_can_we_help_you"
+            android:gravity="start"
+            android:paddingTop="18dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/atomic_age"
+
+            android:textStyle="bold"
+            android:textColor="#089F8B"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:text="Enter your details"
+            android:gravity="start"
+            android:paddingTop="18dp"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/atomic_age"
+
+            android:textStyle="bold"
+            android:textColor="#47A60A"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="7dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter username"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:imeOptions="normal"
+                    android:inputType="text"
+                    android:soundEffectsEnabled="true"
+                    android:textColor="#45AA05"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:hint="Enter Email"
+                    android:imeOptions="normal"
+                    android:inputType="text"
+                    android:soundEffectsEnabled="true"
+                    android:textColor="#45AA05"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:layout_marginTop="47dp"
+                    android:background="#FFD600"
+                    android:textStyle="bold"
+                    android:textColor="#05A347"
+                    android:fontFamily="@font/atomic_age"
+
+                    android:textSize="26sp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:text="Comment"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#03953F"
+            android:fontFamily="@font/atomic_age"
+            />
+
+
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="240dp"
+         android:layout_margin="15dp"
+         android:textStyle="normal"
+         android:fontFamily="@font/atomic_age"
+         android:inputType="textMultiLine"
+         android:background="#E7EDD3"
+         android:textColor="#069A43"
+         android:cursorVisible="true"
+         android:gravity="top"
+         />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="13dp"
+            android:layout_gravity="start"
+            android:background="#fff"
+            android:text="Send"
+            android:textAllCaps="true"
+            android:textColor="#A3064D"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="@font/atomic_age"
+
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

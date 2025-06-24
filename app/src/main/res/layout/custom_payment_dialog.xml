@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D291"
+    >
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:soundEffectsEnabled="true"
+        >
+
+        <RadioButton
+            android:id="@+id/credit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="Credit"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="#6200EA"
+            android:fontFamily="@font/audiowide"
+            android:drawableRight="@drawable/ic_baseline_credit_card_24"
+            android:background="@drawable/edit_round_three"
+            />
+
+
+        <RadioButton
+            android:id="@+id/debit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="Debit"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="#6200EA"
+            android:fontFamily="@font/audiowide"
+            android:drawableRight="@drawable/ic_baseline_credit_card_24"
+            android:background="@drawable/edit_round_three"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/cod"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="Cash on delivery"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="#6200EA"
+            android:fontFamily="@font/audiowide"
+            android:drawableRight="@drawable/ic_baseline_attach_money_24"
+            android:background="@drawable/edit_round_three"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/e_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:text="E-Wallet"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="#6200EA"
+            android:fontFamily="@font/audiowide"
+            android:drawableRight="@drawable/ic_baseline_payment_24"
+            android:background="@drawable/edit_round_three"
+
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

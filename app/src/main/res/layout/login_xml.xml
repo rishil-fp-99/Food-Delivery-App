@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_sharp_account_circle_24"
+
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:height="65dp"
+            android:fontFamily="@font/audiowide"
+            android:paddingLeft="130dp"
+            android:text="Login"
+            android:textColor="#EA4B10"
+            android:textSize="31dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/luname"
+            android:layout_width="361dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:height="10dp"
+            android:background="@drawable/edit_round"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:ems="10"
+            android:hint="Enter Username or Email"
+            android:inputType="textPersonName"
+            android:paddingLeft="19dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginBottom="15dp"
+            android:text=""
+            android:textColor="#4C74E3"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lpwd"
+            android:layout_width="363dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_round"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:paddingLeft="19dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginBottom="15dp"
+            android:text=""
+            android:textColor="#4C74E3"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/show_password"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="SHOW PASSWORD" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="364dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_round"
+            android:backgroundTint="#81DA8C"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:paddingLeft="12dp"
+            android:paddingRight="50dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#1069A1"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            />
+
+
+        <TextView
+            android:id="@+id/direct_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="180dp"
+            android:background="#FFF"
+            android:backgroundTint="#D0D3D4"
+            android:fontFamily="@font/audiowide"
+            android:gravity="center"
+            android:text="DON'T HAVE AN ACCOUNT? SIGN UP?"
+            android:textAllCaps="true"
+            android:textColor="#7D00FF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

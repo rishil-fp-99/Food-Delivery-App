@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.videos_img.video_img_fragment"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/features"
+                android:layout_width="492dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alfa_slab_one"
+                android:gravity="left"
+                android:paddingLeft="16dp"
+                android:paddingTop="3dp"
+                android:text="Our Features"
+                android:textColor="#B31EE9"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:orientation="horizontal"
+                tools:ignore="NestedScrolling"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="466dp"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#BEFF00"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="99dp"
+                                    android:layout_marginTop="35dp"
+                                    android:background="#ECF0F1"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingEnd="28dp"
+                                    android:text="Quick\tDelivery"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold"
+                                    app:drawableRightCompat="@drawable/ic_baseline_directions_run_24" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="275dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="33dp"
+                                    android:background="#ECF0F1"
+                                    android:drawableRight="@drawable/ic_sharp_control_point_24"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Healthy and Hygienic"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="275dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="33dp"
+                                    android:background="#ECF0F1"
+                                    android:drawableRight="@drawable/ic_baseline_local_pizza_24"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="14dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Veg/\nNon-Veg"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="275dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="275dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="33dp"
+                                    android:background="#ECF0F1"
+                                    android:drawableRight="@drawable/ic_baseline_shopping_cart_24"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="14dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Customize FoodItems"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="283dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="283dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="33dp"
+                                    android:background="#ECF0F1"
+                                    android:drawableRight="@drawable/ic_baseline_local_offer_24"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="1dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Offer Promos\n/Discounts"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="283dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardCornerRadius="25dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00FFFD"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="283dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="33dp"
+                                    android:background="#ECF0F1"
+                                    android:drawableRight="@drawable/ic_baseline_fastfood_24"
+                                    android:fontFamily="@font/arbutus"
+                                    android:paddingLeft="1dp"
+                                    android:paddingTop="15dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Combo meals"
+                                    android:textColor="#B31EE9"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </HorizontalScrollView>
+        <!--Add cusines here-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="North Indian Dishes"
+                android:textAllCaps="true"
+                android:textColor="#AA00FF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:id="@+id/north_recview"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="270dp"-->
+<!--                            android:background="#E8B2F1"-->
+<!--                            />-->
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/north_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:autoPlay="true"
+                app:snap="true"
+                app:animateOnBoundary="true"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="#DD6E0AF8"
+                app:strokeWidth="4dp"
+                app:fillColor="#3CED77"
+                app:pageColor="#FFBF00"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="South Indian Dishes"
+                android:textAllCaps="true"
+                android:textColor="#8A5BF1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+
+<!--                                <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/south_recview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="190dp"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:background="#E8B2F1"-->
+<!--                android:orientation="horizontal"-->
+<!--                />-->
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/south_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:autoPlay="true"
+                app:snap="true"
+                app:animateOnBoundary="true"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="#DD6E0AF8"
+                app:strokeWidth="4dp"
+                app:fillColor="#3CED77"
+                app:pageColor="#FFBF00"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Desserts"
+                android:textAllCaps="true"
+                android:textColor="#8A5BF1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/sweets_recview"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="#E8B2F1"-->
+<!--                    android:orientation="vertical" />-->
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/desserts_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:autoPlay="true"
+                app:snap="true"
+                app:animateOnBoundary="true"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="#DD6E0AF8"
+                app:strokeWidth="4dp"
+                app:fillColor="#3CED77"
+                app:pageColor="#FFBF00"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Drinks and juices"
+                android:textAllCaps="true"
+                android:textColor="#8A5BF1"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+<!--                        <androidx.recyclerview.widget.RecyclerView-->
+<!--                            android:id="@+id/drinks_recview"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="3dp"-->
+<!--                            android:background="#E8B2F1"-->
+<!--                            android:orientation="horizontal"-->
+<!--                            />-->
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/drinks_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:autoPlay="true"
+                app:snap="true"
+                app:animateOnBoundary="true"
+                app:slideInterval="3000"
+                app:radius="6dp"
+                app:strokeColor="#DD6E0AF8"
+                app:strokeWidth="4dp"
+                app:fillColor="#3CED77"
+                app:pageColor="#FFBF00"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

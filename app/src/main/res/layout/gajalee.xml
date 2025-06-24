@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                app:cardCornerRadius="20dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#B489EF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gajalee_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:fontFamily="@font/atomic_age"
+                        android:gravity="left"
+                        android:paddingTop="30dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/gajalee"
+                        android:textAllCaps="true"
+                        android:textColor="#570381"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        app:drawableRightCompat="@drawable/ic_baseline_shopping_cart_24"
+                        tools:ignore="RtlSymmetry" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carousel_gajalee"
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="-2dp"
+                app:animateOnBoundary="true"
+                app:autoPlay="true"
+                app:pageColor="#8E2CBF"
+                app:radius="6dp"
+                app:slideInterval="3000"
+                app:snap="true"
+                app:strokeColor="#53DAEF"
+                app:strokeWidth="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gajalee_recview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="15dp"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/display_shortcut_items"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="11dp"
+                android:visibility="invisible"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A1E6F1"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/no_of_items"
+                        android:layout_width="95dp"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/audiowide"
+                        android:textAllCaps="true"
+                        android:textColor="#C51162"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="start"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="149dp"
+                        android:layout_height="52dp"
+                        android:paddingStart="12dp"
+                        android:text="@string/items"
+                        android:textAllCaps="true"
+                        android:textColor="#C51162"
+                        android:textSize="20sp"
+                        android:textStyle="bold|normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/no_of_items"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="RtlSymmetry" />
+
+
+                    <Button
+                        android:id="@+id/view_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/edit_round_three"
+                        android:text="view"
+                        android:textAllCaps="true"
+                        android:textColor="#970848"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.945"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="137dp"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/audiowide"
+                        android:text="@string/total_price"
+                        android:textAllCaps="true"
+                        android:textColor="#C51162"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/total_price"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/audiowide"
+                        android:textAllCaps="true"
+                        android:textColor="#C51162"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView12" />
+
+                    <Button
+                        android:id="@+id/clear_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/edit_round_three"
+                        android:text="clear"
+                        android:textAllCaps="true"
+                        android:textColor="#970848"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/view_cart"
+                        app:layout_constraintStart_toStartOf="@+id/view_cart" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
